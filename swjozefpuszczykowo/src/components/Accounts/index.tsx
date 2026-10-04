@@ -1,6 +1,6 @@
 export default function Accounts() {
   return (
-    <p className="text-gray-600 [&>span]:tracking-[-0.075rem] [&>span]:font-[50] text-base/4.5 [&>strong]:font-heading mx-auto max-w-112.5">
+    <p className="text-gray-600 [&>span]:tracking-[-0.075rem] [&>span]:font-light text-base/4.5 [&>strong]:font-heading mx-auto max-w-112.5">
       <strong>Konta parafii św. Józefa</strong>
       <br />
       <span>u. Dworcowa 16</span>
