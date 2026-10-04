@@ -1,10 +1,7 @@
 import React from 'react'
 import './styles.css'
-import createTransformer from 'tailwind-group-variant'
 import { SiteMap } from '@/model/site-map'
 import Navbar from '@/components/Navbar'
-
-const expandVariant = createTransformer()
 
 const siteMap: SiteMap = [
   { name: 'Aktualności', path: '' },
@@ -90,73 +87,8 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
           </div>
         </header>
 
-        <main className="w-19/20 sm:w-120 md:w-3xl lg:w-240 xl:w-300 m-auto bg-white h-full md:grid md:grid-cols-12">
-          <section className="md:col-span-9">{children}</section>
-          <aside className="md:col-span-3">
-            <section>
-              <h3>Msze Święte</h3>
-              <div>
-                <h4>Niedziele i Święta:</h4>
-                <ul>
-                  <li>7:00</li>
-                  <li>9:00</li>
-                  <li>10:30</li>
-                  <li>12:00</li>
-                  <li>18:00</li>
-                </ul>
-
-                <h4>Dni powszednie:</h4>
-                <ul>
-                  <li>7:00</li>
-                  <li>18:00</li>
-                </ul>
-              </div>
-            </section>
-
-            <section>
-              <h3>Transmijsa Mszy św.</h3>
-              <p>Niedziela, godz. 12:00</p>
-              <a
-                href="https://www.youtube.com/channel/UCXJwgvng4Q2Kfz9-m5Aa5iw"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://swjozefpuszczykowo.pl/images/23/on-line12.jpg"
-                  alt="Transmisja na żywo"
-                />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCXJwgvng4Q2Kfz9-m5Aa5iw/videos"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
-                  alt="Kanał YouTube"
-                />
-                <span>Parafia św. Józefa w Puszczykowie</span>
-              </a>
-            </section>
-
-            <section>
-              <h3>Konta parafii św. Józefa</h3>
-              <address>
-                ul. Dworcowa 16
-                <br />
-                62-040 Puszczykowo
-              </address>
-              <p>86904800070006736420000001</p>
-              <p>- - - - - - - - - - - - - - - - - - - - - - - </p>
-              <p>59904800070006736420000002</p>
-              <h3>Konto Caritas Parafialna</h3>
-              <p>91904800070000775120000001</p>
-            </section>
-          </aside>
-          <footer>
-            <address>
-              e-mail:{' '}
-              <a href="mailto:parafia@swjozefpuszczykowo.pl">parafia@swjozefpuszczykowo.pl</a>
-            </address>
-          </footer>
+        <main className="w-full xl:w-300 m-auto bg-white h-full md:grid md:grid-cols-12 py-1.25">
+          {children}
         </main>
       </body>
     </html>

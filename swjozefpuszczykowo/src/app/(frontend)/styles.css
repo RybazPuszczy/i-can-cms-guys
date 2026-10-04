@@ -12,6 +12,7 @@
   --color-theme-gold-dark: #ab8009;
   --color-theme-gold-darker: #9e7400;
   --color-theme-gold-border: #755600;
+  --color-theme-pale-yellow: #FFFACD;
 
   --color-surfave-muted: #f5f5f5;
   --color-text-main: #333333;
@@ -32,12 +33,12 @@
     font-family: var(--font-body);
     line-height: 1.5;
   }
-
+/* 
   h1, h2, h3, h4, h5 {
     font-family: var(--font-heading);
     font-weight: 700;
     color: inherit;
-  }
+  } */
 }
 
 @layer utilities {
