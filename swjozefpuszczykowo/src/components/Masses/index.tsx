@@ -23,7 +23,7 @@ export default function Masses() {
         <ul className="mx-auto w-fit text-cyan-900">
           {holyMasses.sundays.map((hour) => {
             return (
-              <li key={'sun-' + hour} className="text-right font-extralight">
+              <li key={'sun-' + hour} className="text-right font-light">
                 {hour}
               </li>
             )
@@ -34,7 +34,7 @@ export default function Masses() {
         <ul className="mx-auto w-fit text-cyan-900 font-extralight">
           {holyMasses.weekdays.map((hour) => {
             return (
-              <li key={'week-' + hour} className="text-right font-extralight">
+              <li key={'week-' + hour} className="text-right font-light">
                 {hour}
               </li>
             )
